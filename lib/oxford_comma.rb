@@ -1,5 +1,11 @@
 def oxford_comma(array)
-array.join(" and ") if array.length <= 2
+if array.length <= 2
+  array.join(" and ")
+elsif array.length >= 3
+  array.join(", ")
+  num = array[-1]
+  
+  
 
 
 end
